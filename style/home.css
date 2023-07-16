@@ -11,6 +11,21 @@
   animation: spin 2s infinite linear;
 }
 
+
+a:hover {
+  cursor: none;
+  transform: scale(1.5);
+}
+
+:hover {
+  cursor: none;
+}
+
+button:hover {
+  cursor: none;
+}
+
+
 .custom-cursor::before {
       content: "";
       position: absolute;
