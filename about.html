@@ -5,10 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Shaids-Dmce" />
-  <meta name="keyword"
-    content="Shaids-Dmce" />
+  <meta name="description" content="Shaids-Dmce" />
+  <meta name="keyword" content="Shaids-Dmce" />
   <meta name="author" content="Shaids-Dmce" />
   <title>Shaids-Dmce</title>
   <link rel="stylesheet" href="./style/about.css" />
@@ -23,22 +21,21 @@
   <!-- Favicon start -->
   <link rel="icon" type="image/x-icon" href="assests/logo/bulb with lines.svg" />
   <!-- Favicon end -->
+  <style>
+    .md\:py-24 {
+      padding-top: 3rem;
+    }
+  </style>
 </head>
-
-<style>
-  .md\:py-24 {
-    padding-top: 3rem;
-  }
-</style>
 
 <body class="dark">
   <div class="custom-cursor"></div>
   <script>
     document.addEventListener('mousemove', function(event) {
-var cursor = document.querySelector('.custom-cursor');
-cursor.style.left = event.clientX + 'px';
-cursor.style.top = event.clientY + 'px';
-});
+      var cursor = document.querySelector('.custom-cursor');
+      cursor.style.left = event.clientX + 'px';
+      cursor.style.top = event.clientY + 'px';
+    });
   </script>
 
   <!-- Navbar start -->
@@ -95,10 +92,8 @@ cursor.style.top = event.clientY + 'px';
 
   <!-- About Us -->
   <section class="container-about mx-auto px-4 py-6 md:py-24 bg-gray-900 text-white">
-    <div class="flex flex-col md:flex-row items-center justify-between">
-      <img src="./assests/logo/logo.PNG" alt="About Us" style="margin-left: 12%"
-        class="logo w-64 h-64 rounded-lg shadow-md md:w-96 md:h-96 mb-8 md:mb-0" />
-      <div class="md:w-1/2">
+    <div class="flex  items-center justify-between">
+      <div class="mx-72 my-10">
         <h2 class="text-4xl font-bold text-gray-100 mb-4">About SHAIDS - Student Hive for Artificial Intelligence and Data Science</h2>
         <p class="text-lg text-gray-300 leading-relaxed">
           Welcome to SHAIDS, the Student Hive for Artificial Intelligence and Data Science, an exciting initiative driven by passionate students. Established in 2023, SHAIDS is dedicated to fostering a vibrant community that explores the fascinating realms of AI and Data Science while embracing the spirit of collaboration.
@@ -219,10 +214,12 @@ cursor.style.top = event.clientY + 'px';
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+    defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  <script type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-17C8VGB69W"></script>
   <script>
@@ -231,10 +228,8 @@ cursor.style.top = event.clientY + 'px';
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
-
     gtag("config", "G-17C8VGB69W");
   </script>
-
   <!-- custom js file  -->
   <script src="./js/index.js"></script>
 </body>
