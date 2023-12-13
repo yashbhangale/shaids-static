@@ -13,9 +13,10 @@
   <meta name="author" content="DMCESHAIDSs,Lorem" />
   <title>DMCE SHAIDS</title>
   <link rel="stylesheet" href="./style/output.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/e650b26129.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style/home.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
 
   <!-- Favicon start -->
   <link rel="icon" type="image/x-icon" href="./assests/images/logo.jpg">
@@ -56,22 +57,16 @@ cursor.style.top = event.clientY + 'px';
       // Hide the loader after 3 seconds
       setTimeout(function() {
         loader.style.display = 'none';
-      }, 2000);
+      }, 2);
     });
   </script>
   </div>
   
-  <div class="whatsapp" >
-    Join SHAIDS!
-    <a class="join-community" href="https://docs.google.com/forms/d/e/1FAIpQLScV9kxC424NFX0p0vy0oS9Xg6tf9Z2R72gXFUm2R4skuHuq9w/viewform?usp=sf_link">
-      Join Community
-    </a>
-    
-  </div>
+
   
   <!-- Navbar start -->
   <nav class="bg-blue-900 text-white dark:bg-gray-900 dark:text-gray-400 border-gray-200 dark:border-gray-700">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
       <h2 class="text-4xl font-extrabold dark:text-white">SHAIDS</h2>
       <!-- Mobile navbar -->
       <button data-collapse-toggle="navbar-dropdown" type="button"
@@ -155,9 +150,53 @@ cursor.style.top = event.clientY + 'px';
   </nav>
   <!-- Navbar end -->
 
+  <section class="bg-white dark:bg-gray-900">
+    <div class="container px-6 py-16 mx-auto text-center">
+        <div class="max-w-lg mx-auto">
+            <h1 class="text-4xl  font-semibold text-gray-800 dark:text-white ">Student hive of Artificial Intelligence and Data Science</h1>
+            <p class="mt-6 text-gray-500 dark:text-gray-300">Official website of SHAIDS ( DMCE ) .</p>
+            <button class="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize bg-blue-600 rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none">
+                Explore
+            </button>
+        </div>
+
+        <div class="container">
+          <div class="flex justify-center mt-10">
+              <img id="heroImage" class="object-cover w-full h-96 rounded-xl lg:w-4/5" src="./assests/images/hero.png" />
+          </div>
+      </div>
+      
+      <style>
+/* Define the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Initial position off-screen */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Final position at normal position */
+    }
+}
+
+/* Apply the fade-in animation to the image */
+#heroImage {
+    animation: fadeIn 3s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+/* Additional styles for the container to ensure overflow hidden for swipe-up effect */
+.container {
+    overflow: hidden;
+}
+
+
+      </style>
+    </div>
+</section>
+
   <!-- main section start -->
   <section class="bg-blue-900 text-white dark:bg-gray-900 py-20" id="Home" >
-    <div class="max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center">
+    <div class="max-w-screen-xl mx-auto my-5 px-4 flex flex-col md:flex-row items-center justify-center">
       <div class="md:mr-8 mb-6 md:mb-0 md:max-w-md">
         <img src="./assests/logo/logo.PNG" class="h-128 w-full" />
       </div>
