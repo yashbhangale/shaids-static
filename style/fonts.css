@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'custom';
+    src: url(googlefont.woff2) format('woff2');
+}
+h2 {
+    font-family: 'custom';
+}
