@@ -57,7 +57,7 @@ cursor.style.top = event.clientY + 'px';
       // Hide the loader after 3 seconds
       setTimeout(function() {
         loader.style.display = 'none';
-      }, 2);
+      }, 200);
     });
   </script>
   </div>
@@ -65,7 +65,8 @@ cursor.style.top = event.clientY + 'px';
 
   
   <!-- Navbar start -->
-  <nav class="bg-blue-900 text-white dark:bg-gray-900 dark:text-gray-400 border-gray-200 dark:border-gray-700">
+  <div class="bg-gradient-to-tr from-gray-700 via-gray-900 to-black">
+  <nav>
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
       <h2 class="text-4xl font-extrabold dark:text-white">SHAIDS</h2>
       <!-- Mobile navbar -->
@@ -82,7 +83,7 @@ cursor.style.top = event.clientY + 'px';
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
         <ul
-          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
           <li>
             <a href="#Home"
               class="block py-2 pl-3 pr-4 text-black bg-blue-700 rounded md:bg-transparent md:text-black md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
@@ -102,42 +103,6 @@ cursor.style.top = event.clientY + 'px';
             <a href="#Team"
               class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Team</a>
           </li>
-          <!-- <li>
-            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-              class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-              Topics
-              <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </button>
-            <div id="dropdownNavbar"
-              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                <li>
-                  <a href="./articles/Coding/Coding.hhhh"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Coding</a>
-                </li>
-                <li>
-                  <a href="./articles/Web development/webdevelopment.hhhh"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
-                    development</a>
-                </li>
-                <li>
-                  <a href="./articles/Android & IOS Development/Android&IOSDevelopment.hhhh"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Android & IOS
-                    Development</a>
-                </li>
-                <li>
-                  <a href="./articles/Machine Learning/machinelearning.hhhh"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Machine
-                    Learning</a>
-                </li>
-              </ul>
-            </div>
-          </li> -->
 
           <li>
             <a href="./contact.html"
@@ -150,10 +115,10 @@ cursor.style.top = event.clientY + 'px';
   </nav>
   <!-- Navbar end -->
 
-  <section class="bg-white dark:bg-gray-900">
+  <section>
     <div class="container px-6 py-16 mx-auto text-center">
         <div class="max-w-lg mx-auto">
-            <h1 class="text-4xl  font-semibold text-gray-800 dark:text-white ">Student hive of Artificial Intelligence and Data Science</h1>
+            <h1 class="text-4xl  font-semibold bg-gradient-to-r from-slate-50 via-gray-100 to-slate-200 bg-clip-text text-transparent ">Student hive of Artificial Intelligence and Data Science</h1>
             <p class="mt-6 text-gray-500 dark:text-gray-300">Official website of SHAIDS ( DMCE ) .</p>
             <button class="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize bg-blue-600 rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none">
                 Explore
@@ -195,7 +160,7 @@ cursor.style.top = event.clientY + 'px';
 </section>
 
   <!-- main section start -->
-  <section class="bg-blue-900 text-white dark:bg-gray-900 py-20" id="Home" >
+  <section class=" py-20 text-white" id="Home" >
     <div class="max-w-screen-xl mx-auto my-5 px-4 flex flex-col md:flex-row items-center justify-center">
       <div class="md:mr-8 mb-6 md:mb-0 md:max-w-md">
         <img src="./assests/logo/logo.PNG" class="h-128 w-full" />
@@ -298,7 +263,7 @@ cursor.style.top = event.clientY + 'px';
 
   <!-- blog section end -->
   <!-- team section start-->
-  <section class="bg-white dark:bg-gray-900 pt-12">
+  <section class="pt-12">
     <div class="container px-6 py-1 mx-auto" id="Team">
       <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
         Our Team
@@ -882,7 +847,7 @@ cursor.style.top = event.clientY + 'px';
   </section> 
   
   <!-- statistics-section starts  -->
-  <section class="bg-white dark:bg-indigo-900 pt-6 pb-6">
+  <section>
     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div class="grid grid-cols-2 row-gap-8 md:grid-cols-4">
         <div class="text-center md:border-r">
@@ -925,7 +890,7 @@ cursor.style.top = event.clientY + 'px';
   </section>
 
   <!-- Footer section start -->
-  <footer class="bg-white dark:bg-indigo-950">
+  <footer ">
     <div class="container-footer py-12 mx-auto lg:pl-28 lg:pr-28">
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
         <div class="sm:col-span-2">
@@ -1007,6 +972,7 @@ cursor.style.top = event.clientY + 'px';
 
     </div>
   </footer>
+</div>
   <!-- footer end -->
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
